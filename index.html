@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luc Herbin Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Plus Jakarta Sans', sans-serif; color: #0f172a; }
+      .nv { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: all 0.35s ease; padding: 14px 0; }
+      .nv.s { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+      .wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+      .btnp,.btns { display:inline-flex; align-items:center; justify-content:center; padding:14px 30px; font-size:13.5px; font-weight:600; border-radius:12px; cursor:pointer; transition:all .3s; text-decoration:none; }
+      .btnp { border:none; background:#1a56db; color:#fff; }
+      .btnp:hover { background:#2563eb; transform:translateY(-1px); box-shadow:0 4px 16px rgba(26,86,219,0.3); }
+      .btns { border:1.5px solid #e2e8f0; color:#1a56db; }
+      .hero { min-height:100vh; background:linear-gradient(135deg,#f8fafc 0%,#eef2ff 50%,#f0f9ff 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:110px 28px 60px; }
+      .chips { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+      .chip { padding:9px 18px; background:#fff; border-radius:10px; font-size:11px; font-weight:600; color:#475569; letter-spacing:.05em; border:1px solid #e2e8f0; }
+      .card { background:#fff; border-radius:16px; padding:36px 28px; border:1px solid #f1f5f9; transition:all .3s; }
+      .card:hover { box-shadow:0 8px 30px rgba(0,0,0,0.06); transform:translateY(-3px); }
+      .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+      .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+      section { padding:100px 28px; }
+      @media (max-width: 768px) { .grid2 { grid-template-columns:1fr; } .grid4 { grid-template-columns:1fr 1fr; } .dn { display:none !important; } }
+      @media (max-width: 480px) { .grid4 { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <nav class="nv" id="nav">
+      <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:10px;cursor:pointer" onclick="go('top')">
+          <div style="width:36px;height:36px;border-radius:10px;background:#1a56db;display:flex;align-items:center;justify-content:center"><span style="color:#fff;font-size:14px;font-weight:700">LH</span></div>
+          <div><div style="font-size:14px;font-weight:700">Luc Herbin</div><div style="font-size:10px;color:#94a3b8;font-weight:500">Consulting</div></div>
+        </div>
+        <div class="dn" style="display:flex;align-items:center;gap:28px">
+          <a href="#top">Accueil</a><a href="#expertise">Expertise</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+          <a class="btnp" href="#contact" style="padding:10px 22px;font-size:12.5px">Prendre contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="top" class="hero">
+      <h1 style="font-size:48px;font-weight:800;line-height:1.15;margin-bottom:20px;max-width:700px">L'excellence au service<br><span style="color:#1a56db">de votre transformation</span></h1>
+      <p style="font-size:17px;line-height:1.8;color:#64748b;max-width:540px;margin-bottom:32px">Plus de 30 ans d'expérience dans l'industrie automobile au service de la performance R&D, de l'innovation et de la transformation organisationnelle.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px"><a class="btnp" href="#expertise">Nos services</a><a class="btns" href="#contact">Prendre contact</a></div>
+      <div style="background:#fff;border-radius:20px;padding:24px 28px;box-shadow:0 16px 48px rgba(0,0,0,0.06);max-width:360px;width:100%;margin-bottom:36px;text-align:center">
+        <div style="font-size:20px;font-weight:700">Luc Herbin</div><div style="font-size:13px;color:#1a56db;font-weight:600;margin-bottom:16px">Senior Advisor R&D Automobile</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:14px 0;border-top:1px solid #f1f5f9"><div><div style="font-size:18px;font-weight:800">30+</div><div style="font-size:10px;color:#94a3b8">ans</div></div><div><div style="font-size:18px;font-weight:800">2500</div><div style="font-size:10px;color:#94a3b8">pers.</div></div><div><div style="font-size:18px;font-weight:800">300M</div><div style="font-size:10px;color:#94a3b8">/an</div></div></div>
+      </div>
+      <div class="chips"><div class="chip">SAGEM</div><div class="chip">VALEO</div><div class="chip">FAURECIA</div><div class="chip">JOHNSON CONTROLS</div></div>
+    </div>
+
+    <section id="expertise"><div class="wrap"><h2 style="font-size:38px;text-align:center;font-weight:800;margin-bottom:56px">Une expertise <span style="color:#1a56db">complète</span></h2><div class="grid2"><div class="card"><h3>Direction R&D & Innovation</h3><p>Pilotage de programmes R&D complexes, roadmaps d'innovation pour la mobilité propre et l'électrification.</p></div><div class="card"><h3>Transformation Organisationnelle</h3><p>Restructuration d'organisations R&D, processus d'efficience opérationnelle, jusqu'à 2 500 collaborateurs.</p></div><div class="card"><h3>Performance Industrielle</h3><p>Accélération du time-to-market, optimisation budgétaire (300M€+/an), excellence opérationnelle.</p></div><div class="card"><h3>Conseil Stratégique Auto</h3><p>Accompagnement de directions générales : électrification, véhicule connecté, mobilité durable.</p></div></div></div></section>
+    <section style="background:linear-gradient(135deg,#1e3a5f 0%,#1a56db 50%,#3b82f6 100%);color:#fff"><div class="wrap"><h2 style="text-align:center;font-size:36px;font-weight:800;margin-bottom:48px">Chiffres clés</h2><div class="grid4"><div><div style="font-size:40px;font-weight:800">30+</div><div>Années d'expérience</div></div><div><div style="font-size:40px;font-weight:800">2500</div><div>Collaborateurs</div></div><div><div style="font-size:40px;font-weight:800">300M€</div><div>Budgets/an</div></div><div><div style="font-size:40px;font-weight:800">4</div><div>Groupes internationaux</div></div></div></div></section>
+    <section id="parcours" style="background:#f8fafc"><div class="wrap"><h2 style="font-size:38px;text-align:center;font-weight:800;margin-bottom:48px">Un parcours <span style="color:#1a56db">d'exception</span></h2><div style="max-width:650px;margin:0 auto;display:grid;gap:12px"><div class="card">Groupe Sagem · Ingénierie automobile</div><div class="card">Valeo · Directeur R&D</div><div class="card">Johnson Controls · Direction technique</div><div class="card">Faurecia / Forvia · VP R&D</div><div class="card">LH Consulting · Senior Advisor</div></div></div></section>
+    <section id="contact"><div class="wrap"><h2 style="font-size:38px;font-weight:800;margin-bottom:16px">Prenons <span style="color:#1a56db">contact</span></h2><p style="color:#64748b;margin-bottom:16px">contact@lucherbin-consulting.fr · France</p><form style="display:grid;gap:10px;max-width:500px"><input placeholder="Votre nom" style="padding:14px;border:1px solid #e2e8f0;border-radius:10px"><input placeholder="votre@email.com" style="padding:14px;border:1px solid #e2e8f0;border-radius:10px"><textarea placeholder="Votre message..." style="padding:14px;border:1px solid #e2e8f0;border-radius:10px;min-height:120px"></textarea><button class="btnp" type="button">Envoyer</button></form></div></section>
+    <footer style="background:#0f172a;color:#fff;padding:30px 28px"><div class="wrap" style="color:rgba(255,255,255,.4)">2026 Luc Herbin Consulting</div></footer>
+    <script>
+      function go(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+      window.addEventListener('scroll', () => {
+        document.getElementById('nav').classList.toggle('s', window.scrollY > 40);
+      });
+    </script>
+  </body>
+</html>
